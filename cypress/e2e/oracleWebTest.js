@@ -6,7 +6,7 @@ describe('Login', () => {
     cy.login('QA_USER', 'qatest123')
   })
 
-  it.skip('change the quantity of order', () => {
+  it('change the quantity of order', () => {
     cy.get('td[class="a-GV-cell u-tE"]')
       .contains('10')
       .dblclick({force:true})
